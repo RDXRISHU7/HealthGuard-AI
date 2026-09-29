@@ -1,0 +1,5 @@
+{
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "node -e \"const f=require('fs');f.mkdirSync('.figma/make',{recursive:true});f.existsSync('.figma/make/site.json')||f.writeFileSync('.figma/make/site.json',JSON.stringify({title:'Health Quarters',description:'A precision healthcare intelligence platform for clinical and public health teams.',robots:{index:true},accessibility:{addBypassLinks:false}}));\" && pnpm exec vite build",
+  "outputDirectory": "dist"
+}
